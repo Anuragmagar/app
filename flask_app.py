@@ -45,7 +45,8 @@ def get_yt_metadata():
             },
             'extractor_args': {'youtube': {'player_client': ['android']}},
             # Add a source address to avoid IP restrictions
-            'source_address': '0.0.0.0',
+            # 'source_address': '0.0.0.0',
+            # 'cookiefile': 'cookies.txt',  # <-- Add this line
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
