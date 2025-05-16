@@ -2,3 +2,4 @@ Flask
 ytmusicapi
 yt-dlp
 flask_cors
+gunicorn
