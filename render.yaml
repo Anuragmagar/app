@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: yt-flask-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn flask_app:app
+    plan: free
